@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Snoekbaars Takelaars - Visspullen</title>
+    <style>
+        :root {
+            --primary: #1a365d;
+            --secondary: #2b6cb0;
+            --dark: #2d3748;
+            --light: #f7fafc;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light);
+            color: var(--dark);
+        }
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        /* Navigatiebalk voor de producttypes */
+        nav {
+            background-color: var(--secondary);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 15px;
+            font-weight: bold;
+            text-transform: uppercase;
+            font-size: 14px;
+        }
+        nav a:hover {
+            background-color: var(--primary);
+            border-radius: 4px;
+        }
+        /* Grid voor de vissoorten */
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        h2 {
+            text-align: center;
+            color: var(--primary);
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .card {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.2s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        .card h3 {
+            margin-top: 0;
+            color: var(--secondary);
+        }
+        .btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            margin-top: 10px;
+        }
+        .btn:hover {
+            background-color: var(--secondary);
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>De Snoekbaars Takelaars</h1>
+        <p>Uw specialist in hoogwaardige hengelsport en visspullen</p>
+    </header>
+
+    <!-- Navigatiebalk: Producttypes (Linken naar uw andere HTML-bestanden) -->
+    <nav>
+        <a href="kunstaas.html">Kunstaas</a>
+        <a href="boten.html">Boten</a>
+        <a href="voer.html">Voer</a>
+        <a href="hengels.html">Hengels</a>
+        <a href="molens-reels.html">Molens & Reels</a>
+        <a href="boxen.html">Boxen</a>
+        <a href="stoelen.html">Stoelen</a>
+        <a href="vlieghengels.html">Vlieghengels</a>
+        <a href="stokhengels.html">Stokhengels</a>
+        <a href="dobbers.html">Dobbers</a>
+        <a href="haken.html">Haken</a>
+        <a href="doodaas.html">Doodaas</a>
+    </nav>
+
+    <!-- Hoofdinhoud: Categorieën per vissoort -->
+    <div class="container">
+        <h2>Shop per vissoort</h2>
+        <div class="grid">
+            <div class="card">
+                <h3>Snoek</h3>
+                <p>Al het materiaal voor de ultieme roofvisser.</p>
+                <a href="visspullen-snoek.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Baars</h3>
+                <p>Lichte materialen voor de actieve baarsvisser.</p>
+                <a href="visspullen-baars.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Snoekbaars</h3>
+                <p>Gespecialiseerde takels, shads en dropshot-gear.</p>
+                <a href="visspullen-snoekbaars.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Karper</h3>
+                <p>Baitrunners, stretchers en zwaar karpervoer.</p>
+                <a href="visspullen-karper.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Brasem</h3>
+                <p>Finesse witvisspullen, lokvoer en dobbers.</p>
+                <a href="visspullen-brasem.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Voorn</h3>
+                <p>Lichte vaste stokken en kant-en-klaar tuigjes.</p>
+                <a href="visspullen-voorn.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Zee</h3>
+                <p>Zoutwaterbestendige molens, strandhengels en haken.</p>
+                <a href="visspullen-zee.html" class="btn">Bekijk spullen</a>
+            </div>
+            <div class="card">
+                <h3>Meerval</h3>
+                <p>Heavy-duty materiaal voor de grootste zoetwaterrover.</p>
+                <a href="visspullen-meerval.html" class="btn">Bekijk spullen</a>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
