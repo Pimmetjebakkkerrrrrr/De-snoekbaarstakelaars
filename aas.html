@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aas - De Snoekbaarstakelaars</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f6; color: #333; }
+        nav { background-color: #1a365d; padding: 1rem; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: bold; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; }
+        .nav-links a:hover, .nav-links a.active { color: #fff; border-bottom: 2px solid #fff; }
+        .container { max-width: 1200px; margin: 3rem auto; padding: 0 1rem; }
+        h1 { color: #1a365d; margin-bottom: 2rem; }
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+        .price { font-size: 1.5rem; font-weight: bold; color: #059669; margin: 1rem 0; }
+        footer { background-color: #1a365d; color: #94a3b8; text-align: center; padding: 2rem; margin-top: 4rem; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">De Snoekbaarstakelaars</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="visboxen.html">Visboxen</a></li>
+                <li><a href="hengels.html">Hengels</a></li>
+                <li><a href="aas.html" class="active">Aas</a></li>
+                <li><a href="boten.html">Boten</a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>Vers & Kunstaas</h1>
+        <div class="grid">
+            <div class="card">
+                <h3>Soft-Tail Shads (Per set)</h3>
+                <p>Soepele rubberen visjes met een onweerstaanbare staartactie. Set van 5 stuks.</p>
+                <p class="price">$2</p>
+            </div>
+            <div class="card">
+                <h3>Deep-Diver Plug</h3>
+                <p>Zenuwachtig tikkende plug die snel naar de diepe snoekbaarskuilen duikt.</p>
+                <p class="price">$15</p>
+            </div>
+            <div class="card">
+                <h3>Premium Levend Aas Emmer</h3>
+                <p>Grote emmer met speciaal geselecteerde, spartelverse aasvissen voor de doodaasvisserij.</p>
+                <p class="price">$100</p>
+            </div>
+        </div>
+    </div>
+    <footer><p>&copy; 2026 De Snoekbaarstakelaars.</p></footer>
+</body>
+</html>
