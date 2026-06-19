@@ -3,243 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>De Snoekbaarstakelaars - Welkom</title>
+    <title>De Snoekbaarstakelaars - Home</title>
     <style>
-        /* Basisstijl en Reset */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        body {
-            background-color: #f4f7f6;
-            color: #333;
-            line-height: 1.6;
-        }
-
-        /* Navigatiebalk */
-        nav {
-            background-color: #1a365d;
-            padding: 1rem 2rem;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
-        }
-        .nav-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-        .logo {
-            color: #fff;
-            font-size: 1.4rem;
-            font-weight: bold;
-            text-decoration: none;
-        }
-        .nav-links {
-            list-style: none;
-            display: flex;
-            gap: 2rem;
-        }
-        .nav-links a {
-            color: #cbd5e1;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        .nav-links a:hover {
-            color: #fff;
-        }
-
-        /* Hero Sectie / Welkom */
-        header {
-            background: linear-gradient(rgba(26, 54, 93, 0.8), rgba(26, 54, 93, 0.9)), url('https://unsplash.com') center/cover;
-            color: #fff;
-            text-align: center;
-            padding: 5rem 1rem;
-        }
-        header h1 {
-            font-size: 3rem;
-            margin-bottom: 1rem;
-        }
-        header p {
-            font-size: 1.2rem;
-            color: #93c5fd;
-        }
-
-        /* Hoofdinhoud container */
-        main {
-            max-width: 1200px;
-            margin: 2rem auto;
-            padding: 0 1rem;
-        }
-
-        /* Cursus Banner */
-        .cursus-info {
-            background-color: #e0f2fe;
-            border-left: 5px solid #0284c7;
-            padding: 1.5rem;
-            border-radius: 4px;
-            margin-bottom: 3rem;
-            text-align: center;
-        }
-        .cursus-info h2 {
-            color: #0369a1;
-            margin-bottom: 0.5rem;
-        }
-
-        /* Producten Grid */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-        .card {
-            background: #fff;
-            padding: 2rem;
-            border-radius: 8px;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-            text-align: center;
-            border-top: 4px solid #1a365d;
-            transition: transform 0.3s;
-        }
-        .card:hover {
-            transform: translateY(-5px);
-        }
-        .card h3 {
-            margin-bottom: 1rem;
-            color: #1a365d;
-        }
-        .price {
-            font-size: 1.5rem;
-            font-weight: bold;
-            color: #059669;
-        }
-
-        /* Contact & Locatie */
-        .contact {
-            background-color: #fff;
-            padding: 3rem 2rem;
-            border-radius: 8px;
-            text-shadow: none;
-            text-align: center;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
-        }
-        .contact h2 {
-            color: #1a365d;
-            margin-bottom: 1rem;
-        }
-        .address {
-            font-size: 1.2rem;
-            font-weight: bold;
-            margin: 1rem 0;
-            color: #4b5563;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #1a365d;
-            color: #94a3b8;
-            text-align: center;
-            padding: 2rem 1rem;
-            margin-top: 4rem;
-            font-size: 0.9rem;
-        }
-
-        /* Responsive aanpassing */
-        @media (max-width: 768px) {
-            .nav-container {
-                flex-direction: column;
-                gap: 1rem;
-            }
-            .nav-links {
-                gap: 1rem;
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            header h1 {
-                font-size: 2rem;
-            }
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #f4f7f6; color: #333; line-height: 1.6; }
+        nav { background-color: #1a365d; padding: 1rem; position: sticky; top: 0; z-index: 1000; }
+        .nav-container { max-width: 1200px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { color: #fff; font-size: 1.4rem; font-weight: bold; text-decoration: none; }
+        .nav-links { list-style: none; display: flex; gap: 1.5rem; }
+        .nav-links a { color: #cbd5e1; text-decoration: none; font-weight: 500; }
+        .nav-links a:hover, .nav-links a.active { color: #fff; border-bottom: 2px solid #fff; }
+        header { background: linear-gradient(rgba(26,54,93,0.8), rgba(26,54,93,0.8)), url('https://unsplash.com') center/cover; color: #fff; text-align: center; padding: 6rem 1rem; }
+        header h1 { font-size: 3rem; margin-bottom: 1rem; }
+        main { max-width: 1200px; margin: 3rem auto; padding: 0 1rem; }
+        .info-box { background: #fff; padding: 2.5rem; border-radius: 8px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); margin-bottom: 2rem; border-left: 5px solid #1a365d; }
+        .info-box h2 { color: #1a365d; margin-bottom: 1rem; }
+        .highlight { background-color: #e0f2fe; padding: 1.5rem; border-radius: 6px; border-left: 5px solid #0284c7; text-align: center; margin-bottom: 2rem; }
+        .highlight h3 { color: #0369a1; }
+        footer { background-color: #1a365d; color: #94a3b8; text-align: center; padding: 2rem; margin-top: 4rem; }
     </style>
 </head>
 <body>
 
-    <!-- Navigatiebalk -->
     <nav>
         <div class="nav-container">
-            <a href="#home" class="logo">De Snoekbaarstakelaars</a>
+            <a href="index.html" class="logo">De Snoekbaarstakelaars</a>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#visboxen">Visboxen</a></li>
-                <li><a href="#hengels">Hengels</a></li>
-                <li><a href="#aas">Aas</a></li>
-                <li><a href="#boten">Boten</a></li>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="visboxen.html">Visboxen</a></li>
+                <li><a href="hengels.html">Hengels</a></li>
+                <li><a href="aas.html">Aas</a></li>
+                <li><a href="boten.html">Boten</a></li>
             </ul>
         </div>
     </nav>
 
-    <!-- Welkom Sectie -->
-    <header id="home">
+    <header>
         <h1>Welkom bij De Snoekbaarstakelaars</h1>
-        <p>Alles voor de perfecte vangst en de beste techniek</p>
+        <p>Jouw specialist voor de ultieme snoekbaarservaring</p>
     </header>
 
     <main>
-        <!-- Cursus Informatie -->
-        <section class="cursus-info">
-            <h2>Cursussen op zondag</h2>
-            <p>Elke 2 weken een nieuwe praktijkles | Toegankelijk <strong>vanaf 8 jaar</strong></p>
-        </section>
+        <div class="highlight">
+            <h3>🎣 Jeugd & Volwassen Cursussen</h3>
+            <p>Elke 2 weken op zondag praktijkles aan de waterkant! Toegankelijk <strong>vanaf 8 jaar</strong>.</p>
+        </div>
 
-        <!-- Producten Overzicht -->
-        <section class="grid">
-            <!-- Visboxen -->
-            <div class="card" id="visboxen">
-                <h3>Visboxen</h3>
-                <p class="price">$50</p>
-                <p>Compleet uitgeruste boxen voor direct succes.</p>
-            </div>
-
-            <!-- Hengels -->
-            <div class="card" id="hengels">
-                <h3>Hengels</h3>
-                <p class="price">$50 - $1000</p>
-                <p>Van kwalitatieve instapmodellen tot professionele hengels.</p>
-            </div>
-
-            <!-- Aas -->
-            <div class="card" id="aas">
-                <h3>Aas</h3>
-                <p class="price">$2 - $100</p>
-                <p>Vers en kunstaas voor elke type snoekbaars.</p>
-            </div>
-
-            <!-- Boten -->
-            <div class="card" id="boten">
-                <h3>Boten</h3>
-                <p class="price">$200 - $2000</p>
-                <p>Betrouwbare boten voor een dag op het water.</p>
-            </div>
-        </section>
-
-        <!-- Contact & Route -->
-        <section class="contact">
-            <h2>Kom gezellig langs!</h2>
-            <p>Je kan ook eenvoudig met de auto langskomen. Er is parkeergelegenheid voor de deur.</p>
-            <p class="address">📍 De visweg 32</p>
-            <h3>We hopen dat je snel langskomt!</h3>
-        </section>
+        <div class="info-box">
+            <h2>Kom gezellig langs met de auto!</h2>
+            <p>Onze hengelsportzaak is zeer gemakkelijk bereikbaar met de auto en er is gratis parkeergelegenheid voor de deur.</p>
+            <p style="font-size: 1.3rem; margin: 1rem 0; font-weight: bold; color: #0284c7;">📍 De visweg 32</p>
+            <p>We hebben de koffie klaarstaan. We hopen dat je snel langskomt!</p>
+        </div>
     </main>
 
-    <!-- Voettekst -->
     <footer>
-        <p>&copy; 2026 De Snoekbaarstakelaars. Alle rechten voorbehouden.</p>
+        <p>&copy; 2026 De Snoekbaarstakelaars.</p>
     </footer>
 
 </body>
